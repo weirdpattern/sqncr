@@ -1,0 +1,8 @@
+[include]
+  ./lib/*.js
+
+[ignore]
+  .*/node_modules/.*
+
+[options]
+  module.use_strict=true
