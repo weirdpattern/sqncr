@@ -29,7 +29,8 @@
       "ignoreUrls": true,
       "ignoreStrings": true,
       "ignoreTemplateLiterals": true
-    }]
+    }],
+    "linebreak-style": 0
   },
   "settings": {
     "flowtype": {
