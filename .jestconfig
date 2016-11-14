@@ -1,7 +1,7 @@
 {
   "verbose": true,
-  "scriptPreprocessor": "<rootDir>/node_modules/babel-jest",
-  "testRegex": "specs/runner.js$",
+  "transform": {".*": "<rootDir>/node_modules/babel-jest" },
+  "testRegex": "specs/.*[\\.\\-][Ss]pec[s]?\\.js$",
   "coverageDirectory": "<rootDir>/coverage",
   "coveragePathIgnorePatterns": ["/node_modules/", "/specs/"],
   "coverageThreshold": {
