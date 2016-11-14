@@ -45,7 +45,7 @@ export default {
         reduce(new Map([[1, 1], [2, 2], [3, 3], [4, 4]]), (reduced, value, key) => {
           reduced.set(key, value + 1);
           return reduced;
-        }).values()
+        }).values(),
       ),
     ],
     output: {
@@ -123,7 +123,7 @@ export default {
         reduce(new Map([[1, 1], [2, 2], [3, 3], [4, 4]]), (reduced, value, key) => {
           reduced.set(key, value + 1);
           return reduced;
-        }, new Map([[0, 0]])).values()
+        }, new Map([[0, 0]])).values(),
       ),
     ],
     output: {
@@ -148,32 +148,32 @@ export default {
     criteria: 'toEqual',
     input: [
       Array.from(
-        reduce(new Float32Array([1, 2, 3, 4]), increase(1), new Float32Array(5)).values()
+        reduce(new Float32Array([1, 2, 3, 4]), increase(1), new Float32Array(5)).values(),
       ),
       Array.from(
-        reduce(new Float64Array([1, 2, 3, 4]), increase(1), new Float64Array(5)).values()
+        reduce(new Float64Array([1, 2, 3, 4]), increase(1), new Float64Array(5)).values(),
       ),
       Array.from(
-        reduce(new Int8Array([1, 2, 3, 4]), increase(1), new Int8Array(5)).values()
+        reduce(new Int8Array([1, 2, 3, 4]), increase(1), new Int8Array(5)).values(),
       ),
       Array.from(
-        reduce(new Int16Array([1, 2, 3, 4]), increase(1), new Int16Array(5)).values()
+        reduce(new Int16Array([1, 2, 3, 4]), increase(1), new Int16Array(5)).values(),
       ),
       Array.from(
-        reduce(new Int32Array([1, 2, 3, 4]), increase(1), new Int32Array(5)).values()
+        reduce(new Int32Array([1, 2, 3, 4]), increase(1), new Int32Array(5)).values(),
       ),
       Array.from(
-        reduce(new Uint8Array([1, 2, 3, 4]), increase(1), new Uint8Array(5)).values()
+        reduce(new Uint8Array([1, 2, 3, 4]), increase(1), new Uint8Array(5)).values(),
       ),
       Array.from(
         reduce(new Uint8ClampedArray([1, 2, 3, 4]), increase(1),
-          new Uint8ClampedArray(5)).values()
+          new Uint8ClampedArray(5)).values(),
       ),
       Array.from(
-        reduce(new Uint16Array([1, 2, 3, 4]), increase(1), new Uint16Array(5)).values()
+        reduce(new Uint16Array([1, 2, 3, 4]), increase(1), new Uint16Array(5)).values(),
       ),
       Array.from(
-        reduce(new Uint32Array([1, 2, 3, 4]), increase(1), new Uint32Array(5)).values()
+        reduce(new Uint32Array([1, 2, 3, 4]), increase(1), new Uint32Array(5)).values(),
       ),
     ],
     output: {

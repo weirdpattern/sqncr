@@ -31,7 +31,7 @@ function process(input, output, criteria) {
     }
 
     expectation[criterion](
-      typeof descriptor === 'function' ? descriptor(input) : descriptor.value
+      typeof descriptor === 'function' ? descriptor(input) : descriptor.value,
     );
   });
 }
@@ -64,7 +64,7 @@ glob('specs/**/*.js', { realpath: true, ignore: 'specs/runner.js' }, (err, files
     files.forEach((filename) => {
       const resolvedPath = path.join(
         path.relative(__dirname, path.dirname(filename)),
-        path.basename(filename, '.js')
+        path.basename(filename, '.js'),
       ).replace(/\\/g, '/');
 
       let tests = require(`./${resolvedPath}`); // eslint-disable-line

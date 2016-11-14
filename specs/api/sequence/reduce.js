@@ -46,8 +46,8 @@ export default {
           (reduced, value, key) => {
             reduced.set(key, value + 1);
             return reduced;
-          }
-        ).values()
+          },
+        ).values(),
       ),
     ],
     output: {
@@ -62,7 +62,7 @@ export default {
         new Sequence(new Set([1, 2, 3, 4])).reduce((reduced, value) => {
           reduced.add(value + 1);
           return reduced;
-        }).values()
+        }).values(),
       ),
     ],
     output: {
@@ -74,31 +74,31 @@ export default {
     criteria: 'toEqual',
     input: [
       Array.from(
-        new Sequence(new Float32Array([1, 2, 3, 4])).reduce(increase(0)).values()
+        new Sequence(new Float32Array([1, 2, 3, 4])).reduce(increase(0)).values(),
       ),
       Array.from(
-        new Sequence(new Float64Array([1, 2, 3, 4])).reduce(increase(0)).values()
+        new Sequence(new Float64Array([1, 2, 3, 4])).reduce(increase(0)).values(),
       ),
       Array.from(
-        new Sequence(new Int8Array([1, 2, 3, 4])).reduce(increase(0)).values()
+        new Sequence(new Int8Array([1, 2, 3, 4])).reduce(increase(0)).values(),
       ),
       Array.from(
-        new Sequence(new Int16Array([1, 2, 3, 4])).reduce(increase(0)).values()
+        new Sequence(new Int16Array([1, 2, 3, 4])).reduce(increase(0)).values(),
       ),
       Array.from(
-        new Sequence(new Int32Array([1, 2, 3, 4])).reduce(increase(0)).values()
+        new Sequence(new Int32Array([1, 2, 3, 4])).reduce(increase(0)).values(),
       ),
       Array.from(
-        new Sequence(new Uint8Array([1, 2, 3, 4])).reduce(increase(0)).values()
+        new Sequence(new Uint8Array([1, 2, 3, 4])).reduce(increase(0)).values(),
       ),
       Array.from(
-        new Sequence(new Uint8ClampedArray([1, 2, 3, 4])).reduce(increase(0)).values()
+        new Sequence(new Uint8ClampedArray([1, 2, 3, 4])).reduce(increase(0)).values(),
       ),
       Array.from(
-        new Sequence(new Uint16Array([1, 2, 3, 4])).reduce(increase(0)).values()
+        new Sequence(new Uint16Array([1, 2, 3, 4])).reduce(increase(0)).values(),
       ),
       Array.from(
-        new Sequence(new Uint32Array([1, 2, 3, 4])).reduce(increase(0)).values()
+        new Sequence(new Uint32Array([1, 2, 3, 4])).reduce(increase(0)).values(),
       ),
     ],
     output: {
@@ -112,7 +112,7 @@ export default {
       (reduced, value, key) => {
         reduced[key] = value + 1;
         return reduced;
-      }
+      },
     ),
     output: {
       value: { one: 2, two: 3, three: 4, four: 5 },
@@ -148,8 +148,8 @@ export default {
           (reduced, value, key) => {
             reduced.set(key, value + 1);
             return reduced;
-          }, new Map([[0, 0]])
-        ).values()
+          }, new Map([[0, 0]]),
+        ).values(),
       ),
     ],
     output: {
@@ -164,7 +164,7 @@ export default {
         new Sequence(new Set([1, 2, 3, 4])).reduce((reduced, value) => {
           reduced.add(value + 1);
           return reduced;
-        }, new Set([0])).values()
+        }, new Set([0])).values(),
       ),
     ],
     output: {
@@ -177,48 +177,48 @@ export default {
     input: [
       Array.from(
         new Sequence(
-          new Float32Array([1, 2, 3, 4])
-        ).reduce(increase(1), new Float32Array(5)).values()
+          new Float32Array([1, 2, 3, 4]),
+        ).reduce(increase(1), new Float32Array(5)).values(),
       ),
       Array.from(
         new Sequence(
-          new Float64Array([1, 2, 3, 4])
-        ).reduce(increase(1), new Float64Array(5)).values()
+          new Float64Array([1, 2, 3, 4]),
+        ).reduce(increase(1), new Float64Array(5)).values(),
       ),
       Array.from(
         new Sequence(
-          new Int8Array([1, 2, 3, 4])
-        ).reduce(increase(1), new Int8Array(5)).values()
+          new Int8Array([1, 2, 3, 4]),
+        ).reduce(increase(1), new Int8Array(5)).values(),
       ),
       Array.from(
         new Sequence(
-          new Int16Array([1, 2, 3, 4])
-        ).reduce(increase(1), new Int16Array(5)).values()
+          new Int16Array([1, 2, 3, 4]),
+        ).reduce(increase(1), new Int16Array(5)).values(),
       ),
       Array.from(
         new Sequence(
-          new Int32Array([1, 2, 3, 4])
-        ).reduce(increase(1), new Int32Array(5)).values()
+          new Int32Array([1, 2, 3, 4]),
+        ).reduce(increase(1), new Int32Array(5)).values(),
       ),
       Array.from(
         new Sequence(
-          new Uint8Array([1, 2, 3, 4])
-        ).reduce(increase(1), new Uint8Array(5)).values()
+          new Uint8Array([1, 2, 3, 4]),
+        ).reduce(increase(1), new Uint8Array(5)).values(),
       ),
       Array.from(
         new Sequence(
-          new Uint8ClampedArray([1, 2, 3, 4])
-        ).reduce(increase(1), new Uint8ClampedArray(5)).values()
+          new Uint8ClampedArray([1, 2, 3, 4]),
+        ).reduce(increase(1), new Uint8ClampedArray(5)).values(),
       ),
       Array.from(
         new Sequence(
-          new Uint16Array([1, 2, 3, 4])
-        ).reduce(increase(1), new Uint16Array(5)).values()
+          new Uint16Array([1, 2, 3, 4]),
+        ).reduce(increase(1), new Uint16Array(5)).values(),
       ),
       Array.from(
         new Sequence(
-          new Uint32Array([1, 2, 3, 4])
-        ).reduce(increase(1), new Uint32Array(5)).values()
+          new Uint32Array([1, 2, 3, 4]),
+        ).reduce(increase(1), new Uint32Array(5)).values(),
       ),
     ],
     output: {
@@ -232,7 +232,7 @@ export default {
       (reduced, value, key) => {
         reduced[key] = value + 1;
         return reduced;
-      }, { zero: 0 }
+      }, { zero: 0 },
     ),
     output: {
       value: { zero: 0, one: 2, two: 3, three: 4, four: 5 },
