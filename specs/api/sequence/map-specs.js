@@ -96,7 +96,7 @@ describe('sequence/map', () => {
 
     'works with objects': {
       criteria: 'toEqual',
-      input: [new Sequence({one: 1, two: 2, three: 3, four: 4}).map(increase).toArray()],
+      input: [new Sequence({ one: 1, two: 2, three: 3, four: 4 }).map(increase).toArray()],
       output: {
         value: [2, 3, 4, 5],
       },
@@ -104,10 +104,10 @@ describe('sequence/map', () => {
 
     'works with objects using keys': {
       criteria: 'toEqual',
-      input: [new Sequence({one: 1, two: 2, three: 3, four: 4}).map((_, key) => key).toArray()],
+      input: [new Sequence({ one: 1, two: 2, three: 3, four: 4 }).map((_, key) => key).toArray()],
       output: {
         value: ['one', 'two', 'three', 'four'],
       },
-    }
+    },
   });
 });
