@@ -6,7 +6,7 @@ function lessThanTwo(value) {
   return value <= 2;
 }
 
-describe('sequence/drop', () => {
+describe('sequence/dropWhile', () => {
   run({
     'throws when drop condition is not a function': {
       criteria: 'toThrowError',

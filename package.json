@@ -48,7 +48,7 @@
     "lint": "npm run lint:lib & npm run lint:specs",
     "lint:lib": "eslint ./lib/*.js && eslint ./lib/**/*.js",
     "lint:specs": "eslint ./specs/*.js && eslint ./specs/**/*.js",
-    "static-check": "flow",
+    "static-analysis": "flow",
     "specs": "jest --config .jestconfig",
     "coverage": "jest --config .jestconfig --coverage",
     "coveralls": "npm run coverage && cat ./coverage/lcov.info | ./node_modules/.bin/coveralls"
